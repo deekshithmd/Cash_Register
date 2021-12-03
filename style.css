@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+:root{
+    --basic-font: 'Roboto Slab', serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /*display: flex;
+    flex-direction: column;*/
+    width: 100%;
+    font-family: var(--basic-font);
+}
+
+.heading{
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin:2rem;
+}
+
+.description{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+#check{
+    display: block;
+    width: 10rem;
+    padding: 1rem ;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 3px solid blueviolet;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+#check:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+#message{
+    font-size: 3rem;
+    color: blue;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 0.7rem;
+}
+
+.bill-amount{
+    display: block;
+    font-size: 1.5rem;
+    width: 15rem;
+    padding:1rem;
+    border: 4px solid blueviolet;
+    border-radius: 10px;
+    margin: auto;
+}
+.cash-given{
+    display: block;
+    font-size: 1.5rem;
+    width: 15rem;
+    padding: 1rem;
+    border: 4px solid blueviolet;
+    border-radius: 10px;
+    margin: auto;
+}
+
+.fill-table{
+    margin:auto;
+    border: 2px solid blueviolet;
+    border-collapse: collapse;
+}
+th,td,tr{
+    padding: 1rem 2rem;
+    border: 2px solid blueviolet;
+    border-collapse: collapse;
+    text-align: justify;
+    font-size: 1.5rem;
+}
