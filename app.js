@@ -35,7 +35,7 @@ function calculateChange(remainingChange){
 }
 function showMessage(){
     message.style.display="block"
-    message.innerText="Wash plates"
+    message.innerText="Please pay your bill amount..."
 }
 
 function hideMessage(){
