@@ -14,7 +14,6 @@ body{
     width: 100%;
     font-family: var(--basic-font);
 }
-
 .heading{
     font-size: 2rem;
     font-weight: 700;
@@ -28,6 +27,23 @@ body{
     margin: 1rem;
 }
 
+.next{
+    display: block;
+    width: 10rem;
+    padding: 1rem ;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 3px solid blueviolet;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+.container{
+    height:85vh;
+}
+.nextb{
+    display: none;
+}
 #check{
     display: block;
     width: 10rem;
@@ -50,6 +66,9 @@ body{
     text-align: center;
 }
 
+.tbl{
+    display: none;
+}
 h3{
     font-size: 2rem;
     font-weight: 500;

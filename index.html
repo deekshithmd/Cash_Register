@@ -9,40 +9,47 @@
     <title>Cash Register</title>
 </head>
 <body>
-    <h2 class="heading">Cash Register Manager</h2>
-    <p class="description">Enter Bill amount and Cash paid by the customer to know minimum number of notes to return</p>
-    <h3>Bill Amount:</h3>
-    <input class="bill-amount" type="number">
-    <h3>Cash Given:</h3>
-    <input class="cash-given" type="number">
-    <div>
-        <button id="check">Check</button>
+    <div class="container">
+        <h2 class="heading">Cash Register Manager</h2>
+        <p class="description">Enter Bill amount and Cash paid by the customer to know minimum number of notes to return</p>
+        <h3>Bill Amount:</h3>
+        <input class="bill-amount" type="number">
+        <button class="next">Next</button>
+        <div class="nextb">
+            <h3>Cash Given:</h3>
+            <input class="cash-given" type="number">
+            <div>
+                <button id="check">Check</button>
+            </div>
+            <div id="message"></div>
+            <div class="tbl">
+                <table class="fill-table">
+                    <caption><h3>Return Change</h3></caption>
+                    <tr>
+                        <th>Notes</th>
+                        <td class="no-of-notes"></td>
+                        <td class="no-of-notes"></td>
+                        <td class="no-of-notes"></td>
+                        <td class="no-of-notes"></td>
+                        <td class="no-of-notes"></td>
+                        <td class="no-of-notes"></td>
+                        <td class="no-of-notes"></td>
+                    </tr>
+                    <tr>
+                        <th>Amount</th>
+                        <td>2000</td>
+                        <td>500</td>
+                        <td>100</td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
     </div>
-    <div id="message"></div>
-    <table class="fill-table">
-        <caption><h3>Return Change</h3></caption>
-        <tr>
-            <th>Notes</th>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-            <td class="no-of-notes"></td>
-        </tr>
-        <tr>
-            <th>Amount</th>
-            <td>2000</td>
-            <td>500</td>
-            <td>100</td>
-            <td>20</td>
-            <td>10</td>
-            <td>5</td>
-            <td>1</td>
-        </tr>
-    </table>
-    <footer>
+    <footer class="footer">
         <div class="footer-header">Profile links</div>
         <div class="links">
             <span><a class="link fa fa-github fa-2x" href="https://github.com/deekshithmd"></a></span>
