@@ -17,7 +17,7 @@ next.addEventListener("click",() =>{
     tbl.style.display="none"
 })
 
-button.addEventListener("click", function billCheck(){
+button.addEventListener("click", ()=>{
     //console.log(bill);
     //console.log(cash);
     tbl.style.display="block"
