@@ -38,7 +38,7 @@ button.addEventListener("click", function billCheck(){
     }
 })
 
-function calculateChange(remainingChange){
+const calculateChange=(remainingChange)=>{
     for(var i=0; i<note.length; i++){
         const numberofNotes=Math.trunc(remainingChange / note[i])
         remainingChange=remainingChange % note[i]
@@ -47,11 +47,11 @@ function calculateChange(remainingChange){
     }
 }
 
-function showMessage(msg){
+const showMessage=(msg)=>{
     message.style.display="block"
     message.innerText=msg
 }
 
-function hideMessage(){
+const hideMessage=()=>{
     message.style.display="none"
 }
