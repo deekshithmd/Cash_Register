@@ -1,16 +1,16 @@
-var bill_amount=document.querySelector(".bill-amount")
-var cash_given=document.querySelector(".cash-given")
-var button=document.querySelector("#check")
-var notes=document.querySelectorAll(".no-of-notes")
-var message=document.querySelector("#message")
-var next=document.querySelector(".next")
-var section=document.querySelector(".nextb")
-var table=document.querySelector("fill-table")
-var tbl=document.querySelector(".tbl")
+const bill_amount=document.querySelector(".bill-amount")
+const cash_given=document.querySelector(".cash-given")
+const button=document.querySelector("#check")
+const notes=document.querySelectorAll(".no-of-notes")
+const message=document.querySelector("#message")
+const next=document.querySelector(".next")
+const section=document.querySelector(".nextb")
+const table=document.querySelector("fill-table")
+const tbl=document.querySelector(".tbl")
 
 const note=[2000, 500, 100, 20, 10, 5, 1]
 
-next.addEventListener("click",()=>{
+next.addEventListener("click",() =>{
     section.style.display="block"
     //button.style.display="block"
     next.style.display="none"
@@ -38,7 +38,7 @@ button.addEventListener("click", function billCheck(){
     }
 })
 
-const calculateChange=(remainingChange)=>{
+const calculateChange = (remainingChange) =>{
     for(var i=0; i<note.length; i++){
         const numberofNotes=Math.trunc(remainingChange / note[i])
         remainingChange=remainingChange % note[i]
@@ -47,11 +47,11 @@ const calculateChange=(remainingChange)=>{
     }
 }
 
-const showMessage=(msg)=>{
+const showMessage = (msg) =>{
     message.style.display="block"
     message.innerText=msg
 }
 
-const hideMessage=()=>{
+const hideMessage = () =>{
     message.style.display="none"
 }
